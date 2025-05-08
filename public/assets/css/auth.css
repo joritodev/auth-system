@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+main {
+  width: 100%;
+  max-width: 1400px;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.info {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.info > div {
+  width: 100%;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.info div form h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  color: #0056fb;
+  font-weight: 700;
+}
+
+.info div form input {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 15px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1rem;
+}
+
+.info div form input:focus {
+  outline: none;
+  border-color: #0056fb;
+  box-shadow: 0 0 0 2px rgba(0, 86, 251, 0.2);
+}
+
+.info div form input::placeholder {
+  color: #999;
+}
+
+.info div form .termos {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.info div form .termos input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #0056fb;
+  cursor: pointer;
+}
+
+.info div form .termos p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.info div form button {
+  width: 100%;
+  height: 50px;
+  background-color: #0056fb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.info div form button:hover {
+  background-color: #0046d0;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 86, 251, 0.3);
+}
+
+.info div form button:active {
+  transform: translateY(0);
+}
+
+.info div span {
+  text-align: center;
+  color: #666;
+}
+
+.info div span a {
+  text-decoration: none;
+  color: #0056fb;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.info div span a:hover {
+  color: #0046d0;
+  text-decoration: underline;
+}
+
+.sobre {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0056fb 0%, #003aad 100%);
+  padding: 2rem;
+  color: white;
+}
+
+.sobre > div {
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sobre div img {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+.sobre div div h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sobre div div p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.dashboard {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8fafc;
+}
+
+.dashboard-header {
+  background-color: white;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-header h1 {
+  color: #0056fb;
+  font-size: 1.5rem;
+}
+
+.dashboard-header button {
+  background-color: #0056fb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dashboard-header button:hover {
+  background-color: #0046d0;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.user-info-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: 0 auto;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.user-info-card h2 {
+  color: #0056fb;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #f0f4f8;
+  padding-bottom: 0.5rem;
+}
+
+.user-detail {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.user-detail-label {
+  font-weight: 600;
+  color: #555;
+  width: 120px;
+}
+
+.user-detail-value {
+  color: #333;
+  flex: 1;
+}
+
+.dashboard-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.stat-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h3 {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat-card p {
+  color: #0056fb;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 0.9rem;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.success-message {
+  color: #2ecc71;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  display: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@media (max-width: 1024px) {
+  main {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .info,
+  .sobre {
+    width: 100%;
+    padding: 3rem 2rem;
+  }
+
+  .sobre {
+    order: -1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .info > div,
+  .sobre > div {
+    max-width: 500px;
+  }
+
+  .dashboard-stats {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .info div form h1,
+  .sobre div div h1 {
+    font-size: 2rem;
+  }
+
+  .info,
+  .sobre {
+    padding: 2rem 1.5rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .user-info-card {
+    padding: 1.5rem;
+  }
+
+  .user-detail {
+    flex-direction: column;
+  }
+
+  .user-detail-label {
+    width: 100%;
+    margin-bottom: 0.3rem;
+  }
+}
