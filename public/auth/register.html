@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto 1 - Nova Conta</title>
+  </head>
+  <body>
+    <main>
+      <div class="info">
+        <div>
+          <form id="cadastroForm">
+            <h1>Nova conta</h1>
+            <div>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Nome completo"
+                required
+              />
+              <input
+                type="email"
+                id="email"
+                placeholder="Digite seu email"
+                required
+              />
+              <input
+                type="password"
+                id="senha"
+                placeholder="Digite sua senha"
+                required
+              />
+              <div class="termos">
+                <input type="checkbox" id="termos" required />
+                <p>Concordo com os termos.</p>
+              </div>
+              <button type="submit">Criar conta</button>
+            </div>
+          </form>
+          <span>
+            <strong>Já possui uma conta?</strong>
+            <a href="login.html">Faça login.</a>
+          </span>
+        </div>
+      </div>
+      <div class="sobre">
+        <div>
+          <img src="/public/assets/img/model.svg" alt="foto1" />
+          <div>
+            <h1>Leve sua carreira ao próximo nível</h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Accusamus a facilis magni fugit labore accusantium tempora modi
+              delectus autem culpa, pariatur, soluta temporibus quod quibusdam
+              quia harum. A, in ipsa?
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script type="module" src="../assets/js/auth.js"></script>
+  </body>
+</html>
