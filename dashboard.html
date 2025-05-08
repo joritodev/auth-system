@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/assets/css/auth.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <header class="dashboard-header">
+        <h1>Meu Dashboard</h1>
+        <button id="logout">Sair</button>
+      </header>
+      
+      <main class="dashboard-content">
+        <div class="user-info-card">
+          <h2>Informações do Usuário</h2>
+          <div class="user-detail">
+            <span class="user-detail-label">Nome:</span>
+            <span class="user-detail-value" id="user-name"></span>
+          </div>
+          <div class="user-detail">
+            <span class="user-detail-label">Email:</span>
+            <span class="user-detail-value" id="user-email"></span>
+          </div>
+        </div>
+
+        <div class="dashboard-stats">
+          <div class="stat-card">
+            <h3>Atividade Recente</h3>
+            <p>12</p>
+          </div>
+          <div class="stat-card">
+            <h3>Total de Acessos</h3>
+            <p>48</p>
+          </div>
+          <div class="stat-card">
+            <h3>Último Login</h3>
+            <p>Hoje</p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script
+      type="module"
+      src="../auth-system/public/assets/js/dashboard.js"
+    ></script>
+  </body>
+</html>
